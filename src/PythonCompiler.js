@@ -105,7 +105,7 @@ const PythonCompiler = () => {
 
   return (
     <div>
-      <div className='headingcode'><div className='headingcode__text'>  .py</div></div>
+      <div className='headingcode'><div className='headingcode__text'> Main.py</div></div>
       <CodeMirror
         value={code}
         height='300px'
