@@ -40,7 +40,7 @@ const PythonCompiler = () => {
   useEffect(() => {
     setOptions({
       output: (message) => {
-        setConsoleLogs((prevLogs) => [message]);
+        setConsoleLogs((prevLogs) => [...prevLogs, message]);
         setLoading(false);
       },
       error: (error) => {
@@ -105,7 +105,7 @@ const PythonCompiler = () => {
 
   return (
     <div>
-      <div className='headingcode'><div className='headingcode__text'>main.py</div></div>
+      <div className='headingcode'><div className='headingcode__text'>  .py</div></div>
       <CodeMirror
         value={code}
         height='300px'
