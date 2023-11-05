@@ -52,11 +52,12 @@ const PythonCompiler = () => {
     });
   }, []);
 
-  const handleChange = useCallback((val, viewUpdate) => {
+  const handleChange = (val, viewUpdate) => {
     setCode(val);
-  }, []);
+  };
 
   const handleClick = async () => {
+    setConsoleLogs([]);
     setLoading(true);
     try {
       await setEngine('pyodide');
