@@ -30,7 +30,7 @@ body {
 }
 
 .console-line {
-  @apply mb-5;
+  /* @apply mb-5; */
 }
 .console-emulator .loading-spinner {
   position: absolute;
